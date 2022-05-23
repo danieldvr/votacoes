@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Eleições 2022</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div th:replace="fragments/navbar"></div>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 mb-6 text-center">
+        <div class="col-sm">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal fs-5 ">Jair Messias Bolsonaro</h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/bolsonaro.jpeg" class="w-100">
+                    <a href="#" target="_blank" class="w-100 btn btn-lg btn-primary py-1 mt-2">Detalhes do Candidato</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal fs-5">Maria Osmarina da Silva Vaz de Lima</h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/MarinaSilva.jpg" class="w-100">
+                    <a href="#" target="_blank" class="w-100 btn btn-lg btn-primary py-1 mt-2">Detalhes do Candidato</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal fs-5">Luiz Inácio Lula da Silva</h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/lula_imoral.jpg" class="w-100">
+                    <a href="#" target="_blank" class="w-100 btn btn-lg btn-primary py-1 mt-2">Detalhes do Candidato</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 col-sm text-center">
+
+        <div class="form-check d-flex justify-content-center">
+            <input class="form-check-input d-flex" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        </div>
+
+        <div class="form-check d-flex justify-content-center">
+            <input class="form-check-input d-flex" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        </div>
+
+        <div class="form-check d-flex justify-content-center">
+            <input class="form-check-input d-flex" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+        </div>
+    </div>
+    <div class="text-center text-black fw-bold fs-4">Selecione o Candidato e Informe seu CPF:</div>
+    <div class="row-cols-sm input-group">
+        <input type="text-primary" class="col-md-2 form-control cpf-mask" placeholder="000.000.000-00">
+        <button type="button" class="col-md-4 btn btn-outline-primary">Primary</button>
+    </div>
+
+</div>
+
+
+</div>
+
+<div th:replace="fragments/scripts"></div>
+</body>
+</html>
